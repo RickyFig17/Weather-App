@@ -1,23 +1,25 @@
-import './App.css';
-import Header from './Header';
+import "./App.css";
+import Forecast from "./Forecast";
+import Header from "./Header";
+import Home from "./Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={"https://m.media-amazon.com/images/I/61nuuPxUvaL.png"} className="App-logo" alt="logo" />
-        <p>
-      <h1>My weather app</h1>
-        </p>
-        <p>{Header}</p>
-        <a
-          className="App-link"
-          href="https://m.media-amazon.com/images/I/61nuuPxUvaL.png"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Get weather
-        </a>
+        <img
+          src={"https://m.media-amazon.com/images/I/61nuuPxUvaL.png"}
+          className="App-logo"
+          alt="logo"
+        />
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/forecast" element={<Forecast />} />
+          </Routes>
+        </BrowserRouter>
       </header>
     </div>
   );
