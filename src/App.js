@@ -3,6 +3,7 @@ import Forecast from "./Forecast";
 import Header from "./Header";
 import Home from "./Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Radar from "./Radar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/forecast" element={<Forecast />} />
+            <Route path="/radar" element={<Radar />} />
           </Routes>
         </BrowserRouter>
       </header>
