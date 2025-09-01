@@ -1,0 +1,14 @@
+.radar-container {
+  width: 50%; // full width of parent
+  height: 100px; // or whatever fixed height you want
+//   margin-bottom: 40px; // space before footer
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
