@@ -3,28 +3,34 @@
 }
 
 .App-logo {
-  height: 20vmin;
-  pointer-events: none;
-  margin-top: 0px;
+  height: 100px;
+  width: 100px;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
+
 
 .App-header {
   position: fixed;
+  top: 0;
   width: 100%;
-  padding: 15px 0;
+  padding:15px 20;
   background: linear-gradient(90deg, #346cdd 0%, #34d1dd 100%);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: rgb(251, 250, 250);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .App-link {
-  color: #61dafb;
+  color: #fcfdfe;
 }
 
 
